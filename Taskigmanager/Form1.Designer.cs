@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            Tasks = new ListBox();
+            SuspendLayout();
+            // 
+            // Tasks
+            // 
+            Tasks.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            Tasks.FormattingEnabled = true;
+            Tasks.ItemHeight = 30;
+            Tasks.Location = new Point(496, 12);
+            Tasks.Name = "Tasks";
+            Tasks.Size = new Size(292, 424);
+            Tasks.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(Tasks);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private ListBox Tasks;
     }
 }
